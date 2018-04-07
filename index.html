@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crystal Collector Game!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Mad Hippie Crystal Collector</h1>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">How to Play</div>
+                    <div class="card-body">
+                        <p>Each of the four crystals has a secret number associated with it. By clicking a crystal you will
+                            be adding those points to your score.</p>
+                        <p>Try to combine the numbers to reach the exact number given at the begining of the game.</p>
+                        <p>Good luck!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shows the crystals and the scores for the goal, user, and wins and losses -->
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">Crystals</div>
+                    <div class="card-body">
+                        <h2 id="goal-score">Goal Score: </h2>
+                        <img class="crystal" id="one" src="assets/images/clear_ball.jpg">
+                        <img class="crystal" id="two" src="assets/images/green_ball.jpg">
+                        <img class="crystal" id="three" src="assets/images/blue_ball.jpg">
+                        <img class="crystal" id="four" src="assets/images/glitter_ball.jpg">
+                        <h2 id="user-score">Your Score: </h2>
+                        <h4 id="wins">Wins: </h4>
+                        <h4 id="losses">Losses: </h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="assets/javascript/game.js"></script>
+
+</html>
